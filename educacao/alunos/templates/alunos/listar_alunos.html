@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alunos Cadastrados no Sistema</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <ul>
+        {% for aluno in alunos %}
+            <li>Nome: {{ aluno.nome }} {{ aluno.sobrenome }} E-mail: ({{ aluno.email }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
