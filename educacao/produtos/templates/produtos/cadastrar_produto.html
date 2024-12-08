@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produto</title>
+</head>
+<body>
+    <h1>Cadastrar Novo Produto</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <a href="{% url 'produto_sucesso' %}">Voltar para a página de sucesso</a>
+</body>
+</html>
